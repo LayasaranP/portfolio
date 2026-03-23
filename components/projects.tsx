@@ -12,6 +12,7 @@ const projects = [
     details:
       "The project is a machine learning pipeline designed to detect and classify faults in rotating machinery using the CWRU (Case Western Reserve University) Bearing Dataset. It automates the retrieval of this data and processes time-domain features to map complex sub-faults into three primary physical bearing locations: the cage, inner race, and outer race. Finally, the system trains three different classification algorithms (Random Forest, SVM, and KNN) to predict these fault locations and generates scatter plots to visually evaluate their performance.",
     tech: [
+      "scikit-learn",
       "Numpy",
       "Pandas",
       "Matplotlib",
