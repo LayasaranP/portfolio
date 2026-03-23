@@ -1,20 +1,67 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Layasaran Prabhu | AI Engineer Portfolio 🚀
 
-# Run and deploy your AI Studio app
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Deployed on Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)](https://your-live-link.com)
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.dot.js&logoColor=white)](https://nextjs.org/)
 
-This contains everything you need to run your app locally.
+A clean, responsive, and professional portfolio website built to showcase my projects, skills, and experience as an **AI Engineer**. 
 
-View your app in AI Studio: https://ai.studio/apps/977f9407-2a7e-43a9-b846-ca18983a4d62
+---
 
-## Run Locally
+## 🛠 Tech Stack
 
-**Prerequisites:**  Node.js
+* **Frontend:** [Next.js](https://nextjs.org/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/) / Styled Components
+* **Animations:** [Framer Motion](https://www.framer.com/motion/)
+* **Deployment:** Vercel / Netlify / AWS
+* **AI Integration:** (Optional: Mention any LLM APIs or Python backends you've linked)
 
+## ✨ Features
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+* **Responsive Design:** Fully optimized for mobile, tablet, and desktop.
+* **Dynamic Projects:** A curated list of my AI models, research, and web tools with live links and source code.
+* **Contact Form:** Integrated with **EmailJS** for direct inquiries.
+* **Dark Mode:** Because eyes need a break too! 🌙
+* **SEO Optimized:** Meta tags and structured data for better search visibility.
+
+## 📸 Preview
+
+> [!TIP]
+> **Insert a screenshot or a GIF of your site here!** You can do this by uploading an image to your GitHub repo and linking it like this: `![Portfolio Preview](./public/preview.png)`
+
+---
+
+## 🚀 Getting Started
+
+To get a local copy up and running, follow these simple steps:
+
+### Prerequisites
+* **Node.js** (v18.0.0 or higher)
+* **npm** or **yarn**
+
+### Installation
+
+1.  **Clone the repo**
+    ```bash
+    git clone [https://github.com/LayasaranP/my-portfolio.git](https://github.com/LayasaranP/my-portfolio.git)
+    ```
+2.  **Install NPM packages**
+    ```bash
+    npm install
+    ```
+3.  **Start the development server**
+    ```bash
+    npm run dev
+    ```
+
+## 📂 Project Structure
+
+```text
+├── public/          # Static assets (images, icons, resumes)
+├── src/
+│   ├── components/  # Reusable UI components (Navbar, Hero, Cards)
+│   ├── data/        # Project, Experience, and Skill data files
+│   ├── hooks/       # Custom React hooks
+│   ├── styles/      # Global CSS and Tailwind config
+│   └── app/         # Next.js App Router (or pages directory)
+└── README.md
