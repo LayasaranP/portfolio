@@ -15,7 +15,7 @@ export default function AIBackground() {
     let animationFrameId: number;
     let particles: Particle[] = [];
     let time = 0;
-    
+
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
@@ -133,14 +133,14 @@ export default function AIBackground() {
       {/* Deep Ambient Glows */}
       <div className="absolute top-[-20%] left-[-10%] w-[60vw] h-[60vw] rounded-full bg-indigo-900/10 blur-[120px] mix-blend-screen" />
       <div className="absolute bottom-[-20%] right-[-10%] w-[60vw] h-[60vw] rounded-full bg-purple-900/10 blur-[120px] mix-blend-screen" />
-      
+
       <canvas
         ref={canvasRef}
         className="absolute inset-0 w-full h-full"
       />
-      
+
       {/* Noise overlay for texture */}
-      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
+      <div className="absolute inset-0 opacity-20 mix-blend-overlay" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")` }}></div>
     </div>
   );
 }

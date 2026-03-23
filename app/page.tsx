@@ -1,3 +1,5 @@
+'use client';
+
 import Navbar from '@/components/navbar';
 import Hero from '@/components/hero';
 import About from '@/components/about';
@@ -9,8 +11,14 @@ import Certifications from '@/components/certifications';
 import Contact from '@/components/contact';
 import Footer from '@/components/footer';
 import ScrollToTop from '@/components/scroll-to-top';
-import Divider from '@/components/divider';
-import BackgroundAnimation from '@/components/backgroundAnimation';
+import dynamic from 'next/dynamic';
+
+const BackgroundAnimation = dynamic(
+  () => import('@/components/backgroundAnimation'),
+  { ssr: false }
+);
+
+const Divider = dynamic(() => import('@/components/divider'), { ssr: false });
 
 export default function Home() {
   return (

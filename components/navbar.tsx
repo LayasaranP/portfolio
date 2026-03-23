@@ -31,7 +31,7 @@ export default function Navbar() {
         className={`pointer-events-auto flex items-center justify-between transition-all duration-500 ${
           isScrolled 
             ? 'w-full max-w-4xl bg-[#111111]/80 backdrop-blur-xl border border-white/10 shadow-2xl rounded-full px-6 py-3' 
-            : 'w-full max-w-6xl bg-transparent border-transparent px-0 py-4'
+            : 'w-full max-w-6xl bg-transparent border-transparent px-0'
         }`}
       >
         <Link href="/" className="text-2xl font-bold tracking-tighter text-white flex items-center gap-1">

@@ -8,11 +8,10 @@ const projects = [
   {
     title: "Bearing Fault Diagnosis using ML Algorithms",
     description:
-      "Engineered a signal-to-image conversion pipeline that transforms raw 1D vibration signals into 150×150 RGB images by extracting & encoding time-domain features, frequency-domain spectrogram characteristics, and operating conditions via color-gradient mapping.",
+      "Engineered an end-to-end machine learning pipeline to detect and classify bearing faults from the CWRU dataset. Processed time-domain vibration features to categorize complex sub-faults into primary physical locations (cage, inner race, outer race) and trained traditional ML models (Random Forest, SVM, KNN) for high-accuracy prediction.",
     details:
-      "Built & benchmarked a PyTorch transfer learning system comparing EfficientNet-B4, DenseNet-121, and ResNet50; achieved 97.6% accuracy across CWRU, Paderborn, and custom experimental datasets — enhanced with Grad-CAM heatmaps for interpretability.",
+      "The project is a machine learning pipeline designed to detect and classify faults in rotating machinery using the CWRU (Case Western Reserve University) Bearing Dataset. It automates the retrieval of this data and processes time-domain features to map complex sub-faults into three primary physical bearing locations: the cage, inner race, and outer race. Finally, the system trains three different classification algorithms (Random Forest, SVM, and KNN) to predict these fault locations and generates scatter plots to visually evaluate their performance.",
     tech: [
-      "Scikit-Learn",
       "Numpy",
       "Pandas",
       "Matplotlib",
@@ -126,8 +125,9 @@ export default function Projects() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <Image
                     src={project.image}
-                    alt="Architecture diagram"
+                    alt={`${project.title} architecture diagram`}
                     fill
+                    sizes="(max-width: 1024px) 100vw, 40vw"
                     className="object-contain p-4"
                   />
                 </div>

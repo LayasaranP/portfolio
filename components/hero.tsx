@@ -20,17 +20,17 @@ export default function Hero() {
           </span>
           Available for opportunities
         </div>
-        
+
         <h1 className="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tighter mb-2 leading-[1.1]">
           <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/60">Layasaran</span>
           <br />
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-400">Prabhu.</span>
         </h1>
-        
+
         <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-gray-400 mb-8 max-w-2xl">
           Bridging Cloud Computing and Artificial Intelligence.
         </h2>
-        
+
         <p className="text-lg text-gray-400 mb-10 max-w-2xl leading-relaxed">
           I&apos;m an aspiring Cloud Engineer and AI Developer specializing in machine learning, LLM orchestration, and scalable cloud architectures. Currently bridging the gap between mechanical engineering and intelligent software.
         </p>
@@ -61,12 +61,12 @@ export default function Hero() {
             <Linkedin size={24} />
             <span className="sr-only">LinkedIn</span>
           </a>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=layasaranp@gmail.com" 
-             target="_blank" className="hover:text-white hover:scale-110 transition-all">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=layasaranp@gmail.com"
+            target="_blank" rel="noopener noreferrer" className="hover:text-white hover:scale-110 transition-all">
             <Mail size={24} />
             <span className="sr-only">Email</span>
           </a>
-          <a href='https://x.com/layasaranp' target="_blank" className="hover:text-white hover:scale-110 transition-all">
+          <a href='https://x.com/layasaranp' target="_blank" rel="noopener noreferrer" className="hover:text-white hover:scale-110 transition-all">
             <X size={30} />
             <span className="sr-only">X</span>
           </a>
